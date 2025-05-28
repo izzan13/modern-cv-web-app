@@ -11,29 +11,29 @@
   "lang": "en-US",
   "icons": [
     {
-      "src": "/images/icon-72x72.png",
+      "src": "/Images/icon-72x72.png",
       "sizes": "72x72",
-      "type": "image/png"
+      "type": "Image/png"
     },
     {
-      "src": "/images/icon-96x96.png",
+      "src": "/Images/icon-96x96.png",
       "sizes": "96x96",
-      "type": "image/png"
+      "type": "Image/png"
     },
     {
-      "src": "/images/icon-128x128.png",
+      "src": "/Images/icon-128x128.png",
       "sizes": "128x128",
-      "type": "image/png"
+      "type": "Image/png"
     },
     {
-      "src": "/images/icon-152x152.png",
+      "src": "/Images/icon-152x152.png",
       "sizes": "152x152",
-      "type": "image/png"
+      "type": "Image/png"
     },
     {
-      "src": "/images/icon-512x512.png",
+      "src": "/Images/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "Image/png"
       
     }
   ]

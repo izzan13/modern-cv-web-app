@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="Style/stylesheet.css">
+<script defer src="app.js"></script>
+<meta name="theme-color" content="#a1887f">
+
+<!-- PWA Apple Support -->
+<link rel="apple-touch-icon" href="images/icon-152x152.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+</head>
+<body>
+  <nav class="navbar">
+    <img src="images/logo.png" class="logo" onclick="location.href='index.html'">
+    <ul class="nav-links">
+       <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+  <section class="portfolio-gallery">
+    <h2>My Projects</h2><br>
+    <div class="project">
+      <img src="images/project1.png" alt="Project 1">
+      <div class="project-info">
+        <h3>My Journey Begins - 2TVET Challenge Opening at IBTE</h3>
+        <p>This photo was taken during the opening ceremony of the 2TVET Entrepreneurship & Innovation Challenge held at IBTE. As a participant representing my team, I felt a mix of nerves and excitement.
+          It was the beginning of an unforgettable experience that challenged my creativity, teamwork, and technical skills in real-world problem-solving.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="images/project2.png" alt="Project 2">
+      <div class="project-info">
+        <h3>Proud Moment - 2nd Runner-Up at 2TVET Challenge</h3>
+        <p>Here I am, proudly holding my medal and certificate after my team and I were awarded 2nd Runner-Up in the 2TVET Challenge.
+           This moment means a lot to me — it reflects our hard work, late nights of preparation, and commitment to innovation.
+           Being recognized among the top teams was truly an honor.</p>
+      </div>
+    </div>
+    <div class="project">
+      <img src="images/project3.png" alt="Project 3">
+      <div class="project-info">
+        <h3>Building Innovation - Arduino Practical with My Team</h3>
+        <p>This photo captures a hands-on practical session where my teammates and I worked on an Arduino-based project. 
+          It was one of the most engaging parts of the challenge, where we combined coding, electronics, and teamwork to build a functional prototype. 
+          Collaborating closely like this sharpened my technical and communication skills.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceworker.js')
+      .then(() => console.log('Service Worker Registered'))
+      .catch(error => console.log('Service Worker Registration Failed:', error));
+  }
+</script>
+</body>
+</html>

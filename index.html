@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Izzan Asyraaf CV</title>
+  <link rel="stylesheet" href="style/stylesheet.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#a1887f">
+  <link rel="apple-touch-icon" href="images/icon-152x152.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <img src="images/logo.png" class="logo" alt="Logo" onclick="location.href='index.html'">
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-left">
+      <img src="images/profile.jpg" alt="My Photo" class="profile-photo" />
+    </div>
+    <div class="hero-right">
+      <h1>Hello, I'm <span class="highlight">Izzan Asyraaf</span></h1>
+      <h2>Passionate IT Enthusiast</h2>
+      <p>
+        Dedicated to delivering smart digital solutions. I strive to build elegant, efficient, and impactful systems with a strong foundation in modern technologies and a keen eye for design.
+      </p>
+      <div class="hero-buttons">
+        <button onclick="location.href='portfolio.html'" class="btn primary">View My Work</button>
+        <button onclick="location.href='contact.html'" class="btn secondary">Get In Touch</button>
+      </div>
+    </div>
+    <section class="stats-section">
+  <div class="stat-card">
+    <div class="info-icon">🎓</div>
+    <h3>Education</h3>
+    <p>Diploma in Information and Technology</p>
+  </div>
+  <div class="stat-card">
+    <div class="info-icon">💼</div>
+    <h3>Experience</h3>
+    <p>2 Years in Development</p>
+  </div>
+  <div class="stat-card">
+    <div class="info-icon">🚀</div>
+    <h3>Projects</h3>
+    <p>3 Completed Projects</p>
+  </div>
+  <div class="stat-card">
+    <div class="info-icon">🏆</div>
+    <h3>Achievements</h3>
+    <p>Multiple Awards & Certifications</p>
+  </div>
+</section>
+  </main>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceworker.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(error => console.log('Service Worker Registration Failed:', error));
+    }
+  </script>
+</body>
+</html>

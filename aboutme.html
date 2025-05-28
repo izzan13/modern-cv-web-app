@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="Style/stylesheet.css">
+  <script defer src="app.js"></script>
+  <meta name="theme-color" content="#a1887f">
+
+  <!-- PWA Apple Support -->
+  <link rel="apple-touch-icon" href="images/icon-152x152.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+ 
+</head>
+<body>
+  <nav class="navbar">
+    <img src="images/logo.png" class="logo" onclick="location.href='index.html'">
+    <ul class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <section class="about-header">
+    <h1>About Me</h1>
+    <p>Get to know more about my background and journey</p>
+  </section>
+
+  <!-- Main Content -->
+  <section class="about-container">
+    <div class="about-text">
+      <h2>My Story</h2><br>
+      <p>
+      Im passionate and detail-oriented Front-End Developer with a strong foundation in HTML, CSS, and JavaScript. Skilled in creating responsive, user-friendly web interfaces that provide an intuitive and seamless user experience. My journey in technology began 
+      during my university years, where I discovered my passion for coding and problem-solving.
+      </p><br>
+      <p>
+      Last month, I've had the opportunity to join competetion on 2nd TVET Challenge 2025, 
+      where my team and I was awarded as Top 3 the Best Innovation Award. 
+      </p><br>
+      <p>
+      When I'm not coding, you can find me exploring new technologies, contributing to 
+      open-source projects, or enjoying outdoor activities like hiking, running and photography.
+      </p>
+    </div>
+    <div class="about-image">
+      <img src="images/profile.jpg" alt="Izzan Asyraaf">
+    </div>
+    <!-- Education Section -->
+<section class="education-section">
+  <h2>Education</h2>
+  <div class="education-entry">
+    <div class="education-year">2024 - 2026</div>
+    <div class="education-details">
+      <h3>Hntec in Information Technology</h3>
+      <p class="institution">Sultan Saiful Rijal Campus</p>
+      <p>Focused on Internet programming, database management, and Internet of Things module.</p>
+    </div>
+  </div>
+  <div class="education-entry">
+    <div class="education-year">2018 - 2022</div>
+    <div class="education-details">
+      <h3>7 credit on O-Level Exam </h3>
+      <p class="institution">Masin Secondary School</p>
+      <p>Demonstrating my commitment to learning and academic excellence. I continuously seek opportunities to grow my skills and contribute to innovative projects that make a positive impact.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Personal Interests Section -->
+<section class="interests-section">
+  <h2>Personal Interests</h2>
+  <div class="interests-grid">
+    <div class="interest-card">
+      <span class="emoji">💻</span>
+      <h3>Technology</h3>
+      <p>Always exploring the latest in web development, AI, and emerging technologies.</p>
+    </div>
+    <div class="interest-card">
+      <span class="emoji">📷</span>
+      <h3>Photography</h3>
+      <p>Capturing moments and landscapes, with a focus on nature and street photography.</p>
+    </div>
+    <div class="interest-card">
+      <span class="emoji">🏃‍♂️</span>
+      <h3>Fitness</h3>
+      <p>Regular running and gym sessions to maintain physical and mental well-being.</p>
+    </div>
+    <div class="interest-card">
+      <span class="emoji">🎵</span>
+      <h3>Music</h3>
+      <p>Playing instruments and discovering music across various genres.</p>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceworker.js')
+        .then(() => console.log('Service Worker Registered'))
+        .catch(error => console.log('Service Worker Registration Failed:', error));
+    }
+  </script>
+</body>
+</html>

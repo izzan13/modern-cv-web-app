@@ -1,0 +1,40 @@
+{
+  "name": "Modern CV Web App",
+  "short_name": "CVApp",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff9f3",
+  "theme_color": "#a1887f",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "description": "A modern, responsive CV web application with offline support.",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/images/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills</title>
+  <link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="Style/stylesheet.css">
+<script defer src="app.js"></script>
+<meta name="theme-color" content="#a1887f">
+
+<!-- PWA Apple Support -->
+<link rel="apple-touch-icon" href="images/icon-152x152.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+</head>
+<body>
+  <nav class="navbar">
+    <img src="images/logo.png" class="logo" onclick="location.href='index.html'">
+    <ul class="nav-links">
+       <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="skills.html">Skills</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </ul>
+  </nav>
+  <section class="skills-section">
+    <h2>My Skills & Experience</h2>
+    <div class="skills-container">
+      <div class="skill-card">HTML5 & CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Networking</div>
+      <div class="skill-card">Python</div>
+      <div class="skill-card">UI/UX Design</div>
+    </div>
+  </section>
+  <section class="skills-section">
+  <h2>Technical Skills</h2><br>
+  <div class="technical-skills">
+    <div class="skill-column">
+      <h3>Frontend Development</h3>
+      <div class="skill-bar">
+        <span>HTML5 & CSS3</span>
+        <div class="bar"><div style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>JavaScript (ES6+)</span>
+        <div class="bar"><div style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>React.js</span>
+        <div class="bar"><div style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>Vue.js</span>
+        <div class="bar"><div style="width: 75%;"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-column">
+      <h3>Backend Development</h3>
+      <div class="skill-bar">
+        <span>Node.js</span>
+        <div class="bar"><div style="width: 85%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>Python</span>
+        <div class="bar"><div style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>PHP</span>
+        <div class="bar"><div style="width: 75%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>MongoDB</span>
+        <div class="bar"><div style="width: 75%;"></div></div>
+      </div>
+    </div>
+
+    <div class="skill-column">
+      <h3>Tools & Technologies</h3>
+      <div class="skill-bar">
+        <span>Git & GitHub</span>
+        <div class="bar"><div style="width: 90%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>Docker</span>
+        <div class="bar"><div style="width: 80%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>AWS</span>
+        <div class="bar"><div style="width: 70%;"></div></div>
+      </div>
+      <div class="skill-bar">
+        <span>Figma</span>
+        <div class="bar"><div style="width: 85%;"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft-skills-section">
+  <h2>Soft Skills</h2>
+  <div class="soft-skills">
+    <div class="soft-card">
+      <div class="soft-skill-icon">🧠</div>
+      <h3>Problem Solving</h3>
+      <p>Analytical thinking and creative solutions to complex challenges</p>
+    </div>
+    <div class="soft-card">
+      <div class="soft-skill-icon">👥</div>
+      <h3>Team Collaboration</h3>
+      <p>Effective communication and teamwork in agile environments</p>
+    </div>
+    <div class="soft-card">
+      <div class="soft-skill-icon">⏰</div>
+      <h3>Time Management</h3>
+      <p>Efficient project planning and deadline management</p>
+    </div>
+    <div class="soft-card">
+       <div class="soft-skill-icon">🎯</div>
+      <h3>Attention to Detail</h3>
+      <p>Meticulous approach to code quality and user experience</p>
+    </div>
+  </div>
+</section>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('serviceworker.js')
+      .then(() => console.log('Service Worker Registered'))
+      .catch(error => console.log('Service Worker Registration Failed:', error));
+  }
+</script>
+</body>
+</html>

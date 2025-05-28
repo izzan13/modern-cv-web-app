@@ -322,7 +322,7 @@ a:hover {
 .interests-grid {
    display: flex;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  flex-direction: column;
   gap: 20px;
   max-width: 1000px;
   margin-left: auto;
